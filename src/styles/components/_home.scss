@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
+#home {
+    background-image: url('../../assets/img/cover.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poiret One', cursive;
+}
+
+.section {
+    background-color: rgba(0,0,0,0.8);
+    padding: 37px;
+    height: 70%;
+    width: 60%;
+    transition: width 0.6s, height 0.6s;
+    position: relative;
+}
+
+.section:hover {
+    height: 71%;
+    width: 61%;
+}
+
+.instructions-one, .instructions-two {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.instructions-two {
+    margin-top: 24px;
+}
+
+#home h1 {
+    color: #fff;
+    font-size: 29px;
+}
+
+.registration-links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: font-size 0.4s;
+}
+
+.registration-links:hover {
+    text-decoration: none;
+    color:orange;
+    cursor: pointer;
+}
+
+.mainIcon {
+    color: red;
+    font-size: 65px;
+}
+
+.menuContainer {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoPlayContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24%;
+}
+
+.playButtonContainer {
+    position: absolute;
+    top:58%;
+    left: 41%;
+    background-color: rgba(255,165,0,0.6);
+    width: 17%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s ease-in all;
+}
+
+.playButtonContainer:hover {
+    background-color: rgb(197,145,49);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.918), 0 4px 1px -2px rgba(0, 0, 0, 0.87), 0 2px 6px 0 rgba(0, 0, 0, 0.89);
+    color: black;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 16%;
+    min-width: 120px;
+}
+
+.hidden {
+    display: hidden;
+}
+
+.end-result {
+    color: white;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.home-link {
+    background-color: rgba(255,165,0,0.6);
+    width: 17%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s ease-in all;
+    margin: 0 auto;
+}
+
+.score-paragraph {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .score-paragraph {
+        font-size: 22px;
+    }
+    .home-link {
+        width: 27%;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .menuContainer {
+        justify-content: center;
+        align-items: center;
+        }
+    .logoPlayContainer {
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+    }
+     .linksContainer {
+         flex-direction: column;
+     }
+    .registration-links-div {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 5px;
+    }
+    .registration-links-div:nth-child(2) {
+        margin-top: 6px;
+    }
+    .section {
+        padding: 25px;
+        height: 80%;
+        width: 70%;
+    }
+    .section:hover {
+        height: 80%;
+        width: 80%;
+    }
+    #h1-quiz-app {
+        text-align: center;
+    }
+    .instructions-one {
+        color: white;
+        margin-top: 65px; 
+        font-size: 20px;
+        text-align: center; 
+    }
+    .instructions-two {
+        color: white; 
+        margin-top: 25px; 
+        font-size: 20px; 
+        text-align: center; 
+    }
+    .playButtonContainer {
+        left: 38%;
+    }
+}
